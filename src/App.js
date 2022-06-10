@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Grid from './components/Grid';
+import Mapas from './components/Mapas';
+import axios from "axios";
+import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+const url="http://localhost:9003/servidores-locales";
+
+ class App extends Component {
+   state={
+    data:[]
+
+   }
+
+   peticionGet=()=>{
+     axios.get(url).then(response=>{
+       this.setState({data:response.data})
+     })
+   }
+
+   componentDidMount(){
+     this.peticionGet();
+   }
+
+  render() {
+    return (<div className='container'>
+      <Grid datos={this.state.data} peticionGet={this.peticionGet}/>
+      <Mapas datos={this.state.data} />
+     
+  
     </div>
-  );
-}
+    )
+  }
+
+
+} 
 
 export default App;
