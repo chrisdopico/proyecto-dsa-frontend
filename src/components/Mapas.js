@@ -17,7 +17,9 @@ export class Mapas extends Component {
               <Marker
               title={"Nombre del servidor: " + servidor._id + "\n" + 
               "Hora del estado del servidor: " + servidor.estado.timestamp + "\n" + 
-              "Estado del servidor: " + servidor.estado.estado                        
+              "Estado del servidor: " + servidor.estado.estado + "\n" +
+              "Posición (longitud): " + servidor.longitud + "\n" +
+              "Posición (latitud): " + servidor.latitud                    
               }  
               position={{lat: servidor.latitud, lng: servidor.longitud}} />
               )

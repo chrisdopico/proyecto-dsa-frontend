@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -20,43 +21,51 @@ export class Grid extends Component {
       </thead>
       <tbody>
         {datos.map(servidor=>{
-          return(
-            <tr>
-            <td><a href="#">{servidor._id}</a></td>
-            <td>{servidor.estado.estado}</td>
-            <td>{servidor.estado.timestamp}</td>
            
-            </tr>
-          )
-           /* 
             return servidor.estado.estado=="trabajando"?
             <tr>
-            <td><a href="#">{servidor._id}</a></td>
+            <td>
+            <Link to={{pathname:`/detalleservidor/${servidor._id}`}}>
+              <a href='#'> {servidor._id} </a>
+           </Link>
+            </td>
             <td>{servidor.estado.estado}</td>
             <td>{servidor.estado.timestamp}</td>
             <td>{<img src='comprobado.png'></img>}</td>
             </tr>
             : servidor.estado.estado=="incendio"?
             <tr>
-            <td><a href="#">{servidor._id}</a></td>
+              <td>
+            <Link to={{pathname:`/detalleservidor/${servidor._id}`}}>
+              <a href='#'> {servidor._id} </a>
+           </Link>
+            </td>
             <td>{servidor.estado.estado}</td>
             <td>{servidor.estado.timestamp}</td>
             <td>{<img src='fuego.png'></img>}</td>
             </tr>
             : servidor.estado.estado=="presencia"?
             <tr>
-            <td><a href="#">{servidor._id}</a></td>
+             <td>
+            <Link to={{pathname:`/detalleservidor/${servidor._id}`}}>
+              <a href='#'> {servidor._id} </a>
+           </Link>
+            </td>
             <td>{servidor.estado.estado}</td>
             <td>{servidor.estado.timestamp}</td>
             <td>{<img src='espiar.png'></img>}</td>
             </tr>
             :
             <tr>
-            <td><a href="#">{servidor._id}</a></td>
+             <td>
+            <Link to={{pathname:`/detalleservidor/${servidor._id}`}}>
+              <a href='#'> {servidor._id} </a>
+           </Link>
+            </td>
             <td>{servidor.estado.estado}</td>
             <td>{servidor.estado.timestamp}</td>
             <td>{<img src='cancelar.png'></img>}</td>
-            </tr> */
+            </tr>
 
              })}
        
