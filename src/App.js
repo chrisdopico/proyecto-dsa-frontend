@@ -4,7 +4,6 @@ import Grid from './components/Grid';
 import Mapas from './components/Mapas';
 import DetalleSendor from './components/DetalleSendor';
 import axios from "axios";
-import Order from './components/Order';
 import {
 BrowserRouter as Router,
 Routes,
