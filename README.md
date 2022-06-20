@@ -2,10 +2,11 @@
     <img src="./docs/assets/images/REDSensors_logo_1_sin_fondo.png" width="100" align="center">
     <hr>
     <h1>Sistema REDSensors - Frontend Web</h1>
-    <h3>Desarrollo de Software Avanzado</h3>
-    <h4>Máster Universitario en Desarrollo Ágil de Software para la Web</h4>
-    <h5>Universidad de Alcalá</h6>
-    <h6 style="font-style: italic">Christian Dopico, David Abarca, Jorge Romero, Justin Hernández, Williams Rodríguez</h5>
+    <h2>Desarrollo de Software Avanzado</h2>
+    <h3>Máster Universitario en Desarrollo Ágil de Software para la Web</h3>
+    <h4>Universidad de Alcalá</h4>
+    <h5>Curso 2021-2022</h5>
+    <h6 style="font-style: italic">Christian Dopico, David Abarca, Jorge Romero, Justin Hernández, Williams Rodríguez</h6>
     <hr>
 </div>
 
@@ -43,7 +44,7 @@
 
 ![Sistema REDSensors](./docs/assets/images/*.png)
 
-Demo del Proyecto: [Web REDSensors](https://uah-frameworks-frontend-trabajo-final-vue-giodimagio.vercel.app/) (desplegado con[Vercel](https://vercel.com/))
+Demo del Proyecto: [Web REDSensors](https://uah-frameworks-frontend-trabajo-final-vue-giodimagio.vercel.app/) (desplegado con [...]())
 
 <!-- DISEÑO -->
 # Diseño
