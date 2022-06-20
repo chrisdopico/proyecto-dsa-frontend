@@ -3,8 +3,8 @@
 </p>
 <hr>
 <h1 align="center">Sistema REDSensors - Frontend Web</h1>
-<h2 align="center">Desarrollo de Software Avanzado</h2>
-<h3 align="center">Máster Universitario en Desarrollo Ágil de Software para la Web</h3>
+<h3 align="center">Desarrollo de Software Avanzado</h3>
+<h4 align="center">Máster Universitario en Desarrollo Ágil de Software para la Web</h4>
 <h4 align="center">Universidad de Alcalá</h4>
 <h5 align="center">Curso 2021-2022</h5>
 <h6 align="center" style="font-style: italic">Christian Dopico, David Abarca, Jorge Romero, Justin Hernández, Williams Rodríguez</h6>
@@ -40,18 +40,18 @@
 
 <!-- EL RPOYECTO -->
 
-# El proyecto
+## El proyecto
 
 ![Sistema REDSensors](./docs/assets/images/*.png)
 
 Demo del Proyecto: [Web REDSensors](https://uah-frameworks-frontend-trabajo-final-vue-giodimagio.vercel.app/) (desplegado con [...]())
 
 <!-- DISEÑO -->
-# Diseño
+## Diseño
 
 En esta sección se listan las tecnologías, frameworks, librerías y otras herramientas o recursos relevantes usados para la realización del proyecto.
 
-## Stack
+### Stack
 
 #### Tecnologías:
 
@@ -78,16 +78,16 @@ En esta sección se listan las tecnologías, frameworks, librerías y otras herr
 * [GitHub](https://github.com/)
 * [Markdown](https://jquery.com)
 
-## Arquitectura frontend
-## Interfaz
+### Arquitectura frontend
+### Interfaz
 
 <!-- COMO EMPEZAR -->
 
-# Como empezar
+## Como empezar
 
 En esta sección se listarán los pasos necesarios para obtener una copia local del proyecto y ejecutarlo en modo desarrollo.
 
-## Requisitos previos
+### Requisitos previos
 
 Previamente, debemos tener instalado lo siguiente:
 
@@ -95,7 +95,7 @@ Previamente, debemos tener instalado lo siguiente:
 
 * **Node.js**. Es necesario para poder ejecutar código javascript fuera del navegador, con [npm](https://www.npmjs.com/) como gestor de paquetes y librerías incorporado. Es posible utilizar otros gestores como [yarn](https://yarnpkg.com/).
 
-## Instalación
+### Instalación
 
 1. Abrimos un terminal y clonamos el repositorio desde [GitHub](https://github.com/chrisdopico/proyecto-dsa-frontend), vía HTTPS o SSH:
 
@@ -122,13 +122,13 @@ Previamente, debemos tener instalado lo siguiente:
 
 <!-- LICENCIAMIENTO -->
 
-# Licenciamiento
+## Licenciamiento
 
 Distribuido bajo la licencia MIT
 
 <!-- CONTACTO -->
 
-# Contacto
+## Contacto
 
 Williams Rodríguez: (Desarrollador web) - [williams.rodriguez@edu.uah.es](williams.rodriguez@edu.uah.es)
 
