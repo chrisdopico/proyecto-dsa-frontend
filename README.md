@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+<div style="text-align: center">
+    <img src="./docs/assets/images/REDSensors_logo_1_sin_fondo.png" width="100" align="center">
+    <hr>
+    <h1>Sistema REDSensors - Frontend Web</h1>
+    <h3>Desarrollo de Software Avanzado</h3>
+    <h4>Máster Universitario en Desarrollo Ágil de Software para la Web</h4>
+    <h5>Universidad de Alcalá</h6>
+    <h6 style="font-style: italic">Christian Dopico, David Abarca, Jorge Romero, Justin Hernández, Williams Rodríguez</h5>
+    <hr>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- ÍNDICE -->
 
-## Available Scripts
+<details open="open">
+	<summary>Índice</summary>
+	<ol>
+		<li>
+			<a href="#about-the-project">El proyecto</a>
+		</li>
+        <li>
+			<a href="#about-the-project">Diseño</a>
+			<ul>
+                <li><a href="#built-with">Stack</a></li>
+				<li><a href="#built-with">Arquitectura frontened</a></li>
+                <li><a href="#built-with">Interfaz</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#getting-started">Como empezar</a>
+			<ul>
+				<li><a href="#prerequisites">Requisitos previos</a></li>
+				<li><a href="#installation">Instalación</a></li>
+			</ul>
+		</li>
+		<li><a href="#license">Licenciamiento</a></li>
+		<li><a href="#contact">Contacto</a></li>
+	</ol>
+</details>
 
-In the project directory, you can run:
+<!-- EL RPOYECTO -->
 
-### `npm start`
+# El proyecto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Sistema REDSensors](./docs/assets/images/*.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Demo del Proyecto: [Web REDSensors](https://uah-frameworks-frontend-trabajo-final-vue-giodimagio.vercel.app/) (desplegado con[Vercel](https://vercel.com/))
 
-### `npm test`
+<!-- DISEÑO -->
+# Diseño
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+En esta sección se listan las tecnologías, frameworks, librerías y otras herramientas o recursos relevantes usados para la realización del proyecto.
 
-### `npm run build`
+## Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Tecnologías:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* [HTML5](https://html5.org/), [CSS3](https://www.w3.org/TR/CSS/#css), [JavaScript ES6](https://262.ecma-international.org/6.0/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Framework JS:
 
-### `npm run eject`
+* [React 17](https://es.reactjs.org/blog/2020/10/20/react-v17.html)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Framework CSS:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Librerías:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* [Axios](https://axios-http.com/docs/intro)
+* [Google Maps React](https://www.npmjs.com/package/google-maps-react)
 
-## Learn More
+#### Otros recursos:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [VSCode](https://code.visualstudio.com/)
+* [npm](https://jquery.com)
+* [Git](http://git-scm.com/)
+* [GitHub](https://github.com/)
+* [Markdown](https://jquery.com)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Arquitectura frontend
+## Interfaz
 
-### Code Splitting
+<!-- COMO EMPEZAR -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Como empezar
 
-### Analyzing the Bundle Size
+En esta sección se listarán los pasos necesarios para obtener una copia local del proyecto y ejecutarlo en modo desarrollo.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Requisitos previos
 
-### Making a Progressive Web App
+Previamente, debemos tener instalado lo siguiente:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Un editor de código. Para desarrollo web con React lo más recomendable es usar **VSCode**, al cual se pueden añadir extensiones específicas para dicho framework desde el [Marketplace](https://marketplace.visualstudio.com/search?term=react&target=VSCode&category=All%20categories&sortBy=Relevance).
 
-### Advanced Configuration
+* **Node.js**. Es necesario para poder ejecutar código javascript fuera del navegador, con [npm](https://www.npmjs.com/) como gestor de paquetes y librerías incorporado. Es posible utilizar otros gestores como [yarn](https://yarnpkg.com/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Instalación
 
-### Deployment
+1. Abrimos un terminal y clonamos el repositorio desde [GitHub](https://github.com/chrisdopico/proyecto-dsa-frontend), vía HTTPS o SSH:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    HTTPS
+   ```sh
+   git clone git@github.com:chrisdopico/proyecto-dsa-frontend.git
+   ```
+ 	SSH
+   ```sh
+   git clone https://github.com/chrisdopico/proyecto-dsa-frontend.git
+   ```
+2. Nos movemos a la carpeta del proyecto, e.g.:
+   ```sh
+   cd ~/gitProjects/uah/desarrollo-software-avanzado/proyecto-dsa-frontend
+   ```
+3. Instalamos las dependencias que aparecen en el **package.json** mediante el comando
+   ```sh
+   npm install
+   ```
+4. Ejecutamos el siguiente comando para lanzar el servidor de desarrollo de React, por defecto se iniciará en http://localhost:3000/
+   ```sh
+   npm start
+   ```
 
-### `npm run build` fails to minify
+<!-- LICENCIAMIENTO -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Licenciamiento
+
+Distribuido bajo la licencia MIT
+
+<!-- CONTACTO -->
+
+# Contacto
+
+Williams Rodríguez: (Desarrollador web) - [williams.rodriguez@edu.uah.es](williams.rodriguez@edu.uah.es)
+
+Justin Hernández (Arquitectura y Backend) - [justin.hernandez@edu.uah.es](justin.hernandez@edu.uah.es)
+
+Jorge Romero (Responsable de proyecto) [jorge.romeroc@edu.uah.es](mailto:jorge.romeroc@edu.uah.es)
+
+David Abarca (Diseño Bases de datos) - [david.abarca@edu.uah.es](david.abarca@edu.uah.es)
+
+Christian Dopico (Desarrollador móvil Android) - [chrisitian.dopico@edu.uah.es](chrisitian.dopico@edu.uah.es)
