@@ -1,14 +1,14 @@
-<div style="text-align: center">
-    <img src="./docs/assets/images/REDSensors_logo_1_sin_fondo.png" width="100" align="center">
-    <hr>
-    <h1>Sistema REDSensors - Frontend Web</h1>
-    <h2>Desarrollo de Software Avanzado</h2>
-    <h3>Máster Universitario en Desarrollo Ágil de Software para la Web</h3>
-    <h4>Universidad de Alcalá</h4>
-    <h5>Curso 2021-2022</h5>
-    <h6 style="font-style: italic">Christian Dopico, David Abarca, Jorge Romero, Justin Hernández, Williams Rodríguez</h6>
-    <hr>
-</div>
+<p align="center">
+<img src="./docs/assets/images/REDSensors_logo_1_sin_fondo.png" width="100">
+</p>
+<hr>
+<h1 align="center">Sistema REDSensors - Frontend Web</h1>
+<h2 align="center">Desarrollo de Software Avanzado</h2>
+<h3 align="center">Máster Universitario en Desarrollo Ágil de Software para la Web</h3>
+<h4 align="center">Universidad de Alcalá</h4>
+<h5 align="center">Curso 2021-2022</h5>
+<h6 align="center" style="font-style: italic">Christian Dopico, David Abarca, Jorge Romero, Justin Hernández, Williams Rodríguez</h6>
+<hr>
 
 <!-- ÍNDICE -->
 
@@ -134,7 +134,7 @@ Williams Rodríguez: (Desarrollador web) - [williams.rodriguez@edu.uah.es](willi
 
 Justin Hernández (Arquitectura y Backend) - [justin.hernandez@edu.uah.es](justin.hernandez@edu.uah.es)
 
-Jorge Romero (Responsable de proyecto) [jorge.romeroc@edu.uah.es](mailto:jorge.romeroc@edu.uah.es)
+Jorge Romero (Responsable de proyecto) - [jorge.romeroc@edu.uah.es](mailto:jorge.romeroc@edu.uah.es)
 
 David Abarca (Diseño Bases de datos) - [david.abarca@edu.uah.es](david.abarca@edu.uah.es)
 
