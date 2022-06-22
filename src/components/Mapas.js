@@ -8,11 +8,18 @@ export class Mapas extends Component {
     
     return (
         <Map google={this.props.google}
-        style={{width: '100%', height: '100%', position: 'relative'}}
+        style={{width: '70%', height: '80%', position: 'relative'}}
         className={'map'}
         defaultCenter={{ lat: 0 , lng: 0 }}
+        streetViewControl={false}
+        fullscreenControl={false}
+        //  gestureHandling='none' //this will disable scroll wheel
+         disableDefaultUI= {true}
+      
+
         zoom={2}>
         {datos.map(servidor=>{
+          console.log(servidor);
             return(
               <Marker
               title={"Nombre del servidor: " + servidor._id + "\n" + 
@@ -21,7 +28,28 @@ export class Mapas extends Component {
               "Posición (longitud): " + servidor.longitud + "\n" +
               "Posición (latitud): " + servidor.latitud                    
               }  
-              position={{lat: servidor.latitud, lng: servidor.longitud}} />
+              position={{lat: servidor.latitud, lng: servidor.longitud}}
+              
+              icon={{
+          
+                url: 
+                servidor.estado.estado=="trabajando"? 
+                'icons8-marcador-32 (5).png'
+                : servidor.estado.estado=="incendio"?
+                'icons8-marcador-32 (3).png' 
+                :  servidor.estado.estado=="presencia"?
+                'marcador-azul.png' 
+                : servidor.estado.estado=="desconectado"?
+                'marcador-negro' 
+                :'icons8-marcador-32 (4).png' 
+                
+            
+            
+        
+            }}
+              
+              />
+              
               )
          })}
     </Map>

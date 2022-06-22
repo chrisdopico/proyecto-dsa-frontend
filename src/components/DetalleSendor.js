@@ -60,8 +60,8 @@ export default function DetalleSendor() {
             
             <td>{sensores._id}</td>
             <td>{sensores.type}</td>
-            <td>{sensores.lectura.timestamp}</td>
-            <td>{sensores.lectura.valor}</td>
+            <td>{sensores.lectura === undefined ? "-" : sensores.lectura.timestamp}</td>
+            <td>{sensores.lectura === undefined || sensores.lectura.valor==1 ? "-" : sensores.lectura.valor+"°"}</td>
             </tr>
         )
       }

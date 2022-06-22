@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import "./styles/Grid.css";
 
 
 
@@ -73,6 +74,7 @@ export class Grid extends Component {
     </table>
 
     <button type="button" className='btn btn-primary' onClick={()=> this.props.peticionGet()}>Actualizar</button>
+    <a  className='btn btn-primary botonGraficos' href='Graficos'>Graficos generales</a>
       </div>
     )
   }

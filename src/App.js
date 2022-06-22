@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Grid from './components/Grid';
 import Mapas from './components/Mapas';
 import DetalleSendor from './components/DetalleSendor';
+import  Graficos  from './components/Graficos';
 import axios from "axios";
 import {
 BrowserRouter as Router,
@@ -59,6 +60,10 @@ const url="http://localhost:9003/servidores-locales";
       <Routes>
         <Route 
           path='/detalleservidor/:servidor' element={<DetalleSendor dataSensores={this.state.dataSensores} />}>
+        </Route>
+
+        <Route 
+          path='/graficos' element={<Graficos></Graficos>}>
         </Route>
 
         <Route path='/'    
