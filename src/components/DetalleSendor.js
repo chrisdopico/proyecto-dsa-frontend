@@ -5,11 +5,17 @@ import { useEffect, useState, useRef } from "react";
 
 import { useParams } from "react-router-dom"
 
+import './styles/DetallesSensor.css'
+
 
 
 export default function DetalleSendor() {
   let params = useParams();
-  const url=`http://localhost:9003/servidores-locales/${params.servidor}/sensores`;
+
+  const url=`https://redsensors-servicio-consulta.pj87j18q4um.eu-gb.codeengine.appdomain.cloud/servidores-locales/${params.servidor}/sensores`;
+
+  const urlGrafico=`https://charts.mongodb.com/charts-project-0-dlyxq/embed/charts?id=62b22be2-cbdc-41de-8a7a-ad1b8a0d0c51&maxDataAge=3600&theme=light&autoRefresh=true&filter={'idSensor':'${params.servidor}_temperatura_0'}`;
+
 
   const [isLoading, setIsLoading] = useState(true);
   const [datav1, setDataV1] = useState(null);
@@ -72,7 +78,17 @@ export default function DetalleSendor() {
     </table>
 
     { <a  className='btn btn-primary' href='\'>Volver al home</a> }
+
+
+
       </div>
+
+<div className='container'>
+  
+<iframe className='recuadro' src={urlGrafico}></iframe>
+</div>
+
+    
 
 
   </div>

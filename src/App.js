@@ -12,7 +12,7 @@ Route,
 } from "react-router-dom";
 import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 
-const url="http://localhost:9003/servidores-locales";
+const url="https://redsensors-servicio-consulta.pj87j18q4um.eu-gb.codeengine.appdomain.cloud/servidores-locales";
 
  class App extends Component {
    state={
