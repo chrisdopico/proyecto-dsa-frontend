@@ -3,12 +3,14 @@ import React, { Component } from 'react';
 import Grid from './components/Grid';
 import Mapas from './components/Mapas';
 import DetalleSendor from './components/DetalleSendor';
-import  Graficos  from './components/Graficos';
+import Graficos  from './components/Graficos';
 import axios from "axios";
 import {
 BrowserRouter as Router,
 Routes,
 Route,
+Link,
+NavLink
 } from "react-router-dom";
 import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -55,25 +57,45 @@ const url="https://redsensors-servicio-consulta.pj87j18q4um.eu-gb.codeengine.app
 
   render() {
     return (
-    <Router>
-    <div className='container'>
-      <Routes>
-        <Route 
-          path='/detalleservidor/:servidor' element={<DetalleSendor dataSensores={this.state.dataSensores} />}>
-        </Route>
+      <>
+      <Router>
+      <div className='container pt-2'>
+        <header className='bg-ligth pt-1 pb-3' >
+            <Link to='/' class="d-flex justify-content-center mb-3">
+              <img src='REDSensors_logo_1_sin_fondo.png' alt='Home' width="244" height="194"/>
+            </Link>
+          <div className='btn-group d-flex justify-content-end'>
 
-        <Route 
-          path='/graficos' element={<Graficos></Graficos>}>
-        </Route>
+            <NavLink to='/' className='btn btn-danger'  activeClassName='active'>
+              INICIO
+            </NavLink>
+            <NavLink to='/graficos' className='btn btn-danger' activeClassName='active'>
+              METRICAS
+            </NavLink>
 
-        <Route path='/'    
-          element={<><Grid datos={this.state.data} peticionGet={this.peticionGet} sensoresUrl={this.sensoresUrl}></Grid><Mapas  datos={this.state.data} ></Mapas></>}>
-        </Route>
+          </div>
+        </header>
+        
+        <hr/>
+        <Routes>
+          <Route 
+            path='/detalleservidor/:servidor' element={<DetalleSendor dataSensores={this.state.dataSensores} />}>
+          </Route>
 
-      </Routes>
-  
-    </div>
-    </Router>
+          <Route 
+            path='/graficos' element={<Graficos></Graficos>}>
+          </Route>
+
+          <Route path='/'    
+            element={<><Grid datos={this.state.data} peticionGet={this.peticionGet} sensoresUrl={this.sensoresUrl}></Grid><Mapas  datos={this.state.data} ></Mapas></>}>
+          </Route>
+
+        </Routes>
+    
+      </div>
+      </Router>
+      </>
+      
     )
   }
 } 
