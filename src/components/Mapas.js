@@ -10,14 +10,12 @@ export class Mapas extends Component {
         <Map google={this.props.google}
         style={{width: '70%', height: '80%', position: 'relative'}}
         className={'map'}
-        defaultCenter={{ lat: 0 , lng: 0 }}
+        initialCenter={{ lat: 40.416775, lng: -3.703790 }}   // Mapa centrado en la península ibérica
         streetViewControl={false}
         fullscreenControl={false}
         //  gestureHandling='none' //this will disable scroll wheel
-         disableDefaultUI= {true}
-      
-
-        zoom={2}>
+        disableDefaultUI= {true}
+        zoom={6}>
         {datos.map(servidor=>{
           console.log(servidor);
             return(
