@@ -44,54 +44,46 @@ export default function DetalleSendor() {
     
   <div>
 
-     { <h2> Lectura de sensores del servidor {params.servidor}</h2>  }
+    { <h2> Lectura de sensores del servidor {params.servidor}</h2>  }
 
-     <div>
-         <table className="table">
-      <thead>
-        <tr>
-          <th>Nombre del sensor</th>
-          <th>Tipo</th>
-          <th>Ulltima lectura del servidor</th>
-          <th>Valor recogido del sensor</th>
-          
-        </tr>
-      </thead>
-      <tbody>
-       {
-       
-       datav1.sensores.map(sensores =>{
-        return(
+    <div>
+      <table className="table">
+        <thead>
           <tr>
+            <th>Nombre del sensor</th>
+            <th>Tipo</th>
+            <th>Ulltima lectura del servidor</th>
+            <th>Valor recogido del sensor</th>
             
-            <td>{sensores._id}</td>
-            <td>{sensores.type}</td>
-            <td>{sensores.lectura === undefined ? "-" : sensores.lectura.timestamp}</td>
-            <td>{sensores.lectura === undefined || sensores.lectura.valor==1 ? "-" : sensores.lectura.valor+"°"}</td>
-            </tr>
-        )
-      }
-    )
-  }
-       
-      </tbody>
-    </table>
+          </tr>
+        </thead>
 
-    { <a  className='btn btn-primary' href='\'>Volver al home</a> }
+        <tbody>
+        {        
+          datav1.sensores.map(sensores =>{
+              return(
+                <tr>              
+                  <td>{sensores._id}</td>
+                  <td>{sensores.type}</td>
+                  <td>{sensores.lectura === undefined ? "-" : sensores.lectura.timestamp}</td>
+                  <td>{sensores.lectura === undefined || sensores.lectura.valor==1 ? "-" : sensores.lectura.valor+"°"}</td>
+                </tr>
+              ) 
+            } 
+          )
+        }
+        </tbody>
+      </table>
 
+      <hr/>
 
+      {/* <a  className='btn btn-danger' href='\'>Volver al home</a> */}
+    </div>
 
-      </div>
+    <div className='container'>    
+      <iframe className='recuadro' src={urlGrafico}></iframe>
+    </div>
 
-<div className='container'>
-  
-<iframe className='recuadro' src={urlGrafico}></iframe>
-</div>
-
-    
-
-
-  </div>
-  
+  </div> 
  )
 }
