@@ -77,14 +77,17 @@ const url="https://redsensors-servicio-consulta.pj87j18q4um.eu-gb.codeengine.app
         <hr/>
         <Routes>
           <Route 
-            path='/detalleservidor/:servidor' element={<DetalleSendor dataSensores={this.state.dataSensores} />}>
+            path='/detalleservidor/:servidor' 
+            element={<DetalleSendor dataSensores={this.state.dataSensores} />}>
           </Route>
 
           <Route 
-            path='/graficos' element={<Graficos></Graficos>}>
+            path='/graficos' 
+            element={<Graficos></Graficos>}>
           </Route>
 
-          <Route path='/'    
+          <Route 
+            path='/'    
             element={<><Grid datos={this.state.data} peticionGet={this.peticionGet} sensoresUrl={this.sensoresUrl}></Grid><Mapas  datos={this.state.data} ></Mapas></>}>
           </Route>
 
