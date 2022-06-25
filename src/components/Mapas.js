@@ -7,15 +7,15 @@ export class Mapas extends Component {
    
     
     return (
-        <Map google={this.props.google}
-        style={{width: '70%', height: '80%', position: 'relative'}}
+      <Map google={this.props.google}
+        style={{width: '70%', height: '80%'}}
         className={'map'}
         initialCenter={{ lat: 40.416775, lng: -3.703790 }}   // Mapa centrado en la península ibérica
         streetViewControl={false}
         fullscreenControl={false}
         //  gestureHandling='none' //this will disable scroll wheel
         disableDefaultUI= {true}
-        zoom={6}>
+        zoom={11}>
         {datos.map(servidor=>{
           console.log(servidor);
             return(
@@ -38,19 +38,17 @@ export class Mapas extends Component {
                 :  servidor.estado.estado=="presencia"?
                 'marcador-azul.png' 
                 : servidor.estado.estado=="desconectado"?
-                'marcador-negro' 
+                'marcador-negro.png'
                 :'icons8-marcador-32 (4).png' 
-                
-            
-            
-        
-            }}
+              
+              }}
               
               />
               
-              )
-         })}
-    </Map>
+            )
+         })
+        }
+      </Map>
     );
   }
 }

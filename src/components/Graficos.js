@@ -26,6 +26,13 @@ export class Graficos extends Component {
           <iframe className='servidorCircular' src="https://charts.mongodb.com/charts-project-0-dlyxq/embed/charts?id=62a37112-1269-4bdb-8e1d-4da63ffc4aeb&maxDataAge=300&theme=light&autoRefresh=true"></iframe>
         </div>
 
+        <hr/>
+
+        <div >
+        <iframe className='mediaSensoresTemp' src="https://charts.mongodb.com/charts-project-0-dlyxq/embed/charts?id=62b22be2-cbdc-41de-8a7a-ad1b8a0d0c51&maxDataAge=3600&theme=light&autoRefresh=true"></iframe>
+        </div>
+
+
       </div>
         
     )
