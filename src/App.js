@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 
 import Grid from './components/Grid';
 import Mapas from './components/Mapas';
@@ -20,9 +21,6 @@ const url="https://redsensors-servicio-consulta.pj87j18q4um.eu-gb.codeengine.app
    state={
     data:[],
     dataSensores:[],
-  
- 
-
    }
 
    peticionGet=()=>{
@@ -37,14 +35,14 @@ const url="https://redsensors-servicio-consulta.pj87j18q4um.eu-gb.codeengine.app
         window.alert("El servidor ha respondido con un codigo fuera del 200, ha habido un error en el lado del servidor");
       } else if (error.request) {
         window.alert("La llamada se ha hecho pero no ha habido respuesta por parte del servidor");
-          console.log(error.request);
+        console.log(error.request);
       } else {
-          // Something happened in setting up the request that triggered an Error
-          window.alert("Error ocurrido al configurar la llamada");
-          console.log('Error', error.message);
+        // Something happened in setting up the request that triggered an Error
+        window.alert("Error ocurrido al configurar la llamada");
+        console.log('Error', error.message);
       }
       console.log(error.config);
-  });
+      });
    }
 
    componentDidMount(){
@@ -59,8 +57,8 @@ const url="https://redsensors-servicio-consulta.pj87j18q4um.eu-gb.codeengine.app
     return (
       <>
       <Router>
-      <div className='container pt-2'>
-        <header className='bg-ligth pt-1 pb-3' >
+      <div className='container'>
+        <header className='bg-ligth pt-3 pb-3' >
             <Link to='/' class="d-flex justify-content-center mb-3">
               <img src='REDSensors_logo_1_sin_fondo.png' alt='Home' width="244" height="194"/>
             </Link>
